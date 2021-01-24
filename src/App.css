@@ -1,38 +1,90 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content_center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.card{
+  width: 20rem;
+  height: 30rem;
+  box-shadow: 0px 0px 10px;
+}
+
+.title{
   text-align: center;
+  background-color: cyan;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputs{
+  text-align: center;
+  margin-top: 1rem;
+}
+.inputs button{
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 100px;
+  border: none;
+  width: 2rem;
+  height: 4rem;
+  box-shadow: 0px 0px 10px;
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: orange;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="text"]{
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.items{
+  
+  margin-top: 1rem;
+  width: 20rem;
+  height: 19rem;
+  overflow-y: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.items .lists{
+  width: 18rem;
+  height: 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  /* display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;  */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items .lists button{
+  width: 2rem;
+  height: 2rem;
+  box-shadow: 0px 0px 10px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  float: left;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: red;
+}
+
+.items .lists li{
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.5rem;
 }
